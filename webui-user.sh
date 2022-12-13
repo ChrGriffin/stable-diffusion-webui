@@ -4,13 +4,13 @@
 #########################################################
 
 # Install directory without trailing slash
-#install_dir="/home/$(whoami)"
+install_dir="/opt/trainml/models"
 
 # Name of the subdirectory
 #clone_dir="stable-diffusion-webui"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-export COMMANDLINE_ARGS=""
+export COMMANDLINE_ARGS="--api --nowebui --ckpt-dir \"/opt/trainml/models/\""
 
 # python3 executable
 #python_cmd="python3"
@@ -22,7 +22,7 @@ export COMMANDLINE_ARGS=""
 #venv_dir="venv"
 
 # script to launch to start the app
-#export LAUNCH_SCRIPT="launch.py"
+export LAUNCH_SCRIPT="/opt/trainml/models/stable-diffusion-webui/launch.py"
 
 # install command for torch
 #export TORCH_COMMAND="pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
