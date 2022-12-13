@@ -16,6 +16,7 @@ fi
 # shellcheck source=/dev/null
 if [[ -f webui-user.sh ]]
 then
+    printf "getting webui-user variables"
     source ./webui-user.sh
 fi
 
