@@ -7,10 +7,10 @@
 install_dir="/opt/trainml/models"
 
 # Name of the subdirectory
-#clone_dir="stable-diffusion-webui"
+clone_dir="./"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-export COMMANDLINE_ARGS="--api --nowebui --ckpt-dir \"/opt/trainml/models/\""
+export COMMANDLINE_ARGS=
 
 # python3 executable
 #python_cmd="python3"
@@ -22,7 +22,7 @@ export COMMANDLINE_ARGS="--api --nowebui --ckpt-dir \"/opt/trainml/models/\""
 #venv_dir="venv"
 
 # script to launch to start the app
-export LAUNCH_SCRIPT="/opt/trainml/models/stable-diffusion-webui/launch.py"
+export LAUNCH_SCRIPT="/opt/trainml/models/launch.py"
 
 # install command for torch
 #export TORCH_COMMAND="pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
